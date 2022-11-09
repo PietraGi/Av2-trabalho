@@ -1,2 +1,2 @@
 # Av2-trabalho
-Arvore
+O trabalho está no arquibo main.c
