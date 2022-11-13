@@ -144,12 +144,13 @@ void imprimir(arvore v, int nivel) {
 
 /* exclusão de elemento da árvore */
 void excluir(node *p) {
-  if (p==NULL)
+  if (root==NULL)
     return;
-  excluir(p->esquerda);
-  excluir(p->direita);
-  free(p);
-  p = NULL;
+  /*verificando se o nó atual é folha*/
+  if(root->esquerda==NULL && root->direita==NULL){
+    free(root);
+  }
+  root= NULL;
   }
 
 /* percorrer uma árvore utilizando o algoritmo de pré-ordem */
